@@ -3,6 +3,17 @@
 {
 font-family: 'Raleway'
 }
+p, h2, h4
+{
+      margin-left: 40px; 
+      font-weight: bold; 
+}
+
+h4 i
+{
+    color: blue;
+        font-weight: bold;
+}
 
 #bloc_page
 {
@@ -14,6 +25,7 @@ font-family: 'Raleway'
     display: flex;
     flex-direction: row;
     align-items: baseline;
+          margin-left: 40px;
 }
 /* Header */
 header
@@ -29,17 +41,46 @@ label
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
     color: #ffffff;
+    padding:7px;
 }
-i
+input
+{
+    padding:7px;
+}
+.form__group i
+{
+       
+    background-color: #c7c3c3;
+    padding:7px;
+    border:none;
+    margin-right: none;
+    margin-left: 40px;
+}
+#info i 
+{
+        margin-right: 4px;
+        border: 0.01px solid #babdc2;
+        color:blue;
+        margin-right: 10px;
+        padding-left: 8px;
+           padding-right: 8px;
+              padding-bottom: 2px;
+                 padding-top: 2px;
+    background-color: none;
+        margin-left: 40px;
+            border-radius: 20px;
+}
+h4 i
 {
 
     align-items: flex-end;
-    margin-left: 30px;
+    margin-left: 40px;
     margin-bottom: 10px;
     margin-top:10px; 
-    border: 2px solid #181818;
+    border: none;
     padding: 10px;
     border-radius: 20px;
+    background-color: #adc9ff;
 }
 /* Navigation */
 
@@ -47,6 +88,7 @@ nav ul
 {
     list-style-type: none;
     display: flex;
+    margin-right: 40px; 
 }
 
 nav li
@@ -76,13 +118,17 @@ nav a:hover
     flex-wrap: wrap;
     justify-content: space-around;
     height: 500px;
-
 }
-#Activites 
+.element i
+{
+    color:blue;
+}
+#activites
 {
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-around;
-
+    height: 500px;
 }
 .element
 {
@@ -103,10 +149,17 @@ aside
 {
 	width: 25%;
 }
+
+aside i 
+{
+       border: none;
+       margin-left: 60px;
+}
 aside , section
 {
+    margin-top: 30px;
     margin-left : 40px;
-    margin-right: 20px;
+    margin-right: 30px;
     vertical-align: top;
     margin-bottom: 55px;
     display: inline-block;  
@@ -119,16 +172,8 @@ aside , section
     overflow: auto;
 
 }
-section h1, article h1
-{
-
-}
-
 article
 {
-    width: 100%;
-    height: 500px;
-    overflow: auto;
 
 }
 
@@ -144,6 +189,7 @@ footer
 footer p, footer ul
 {
     font-size: 1.2em;
+        font-weight: bold;
 }
 
 footer h1
