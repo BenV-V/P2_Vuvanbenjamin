@@ -1,3 +1,4 @@
+/* Global */
 *
 {
 font-family: 'Raleway'
@@ -14,7 +15,7 @@ font-family: 'Raleway'
     flex-direction: row;
     align-items: baseline;
 }
-
+/* Header */
 header
 {
 	display:flex;
@@ -22,7 +23,24 @@ header
 	align-items: flex-end;
     background: url('images/separateur.png') repeat-x bottom;
 }
+label
+{
+    background-color: #3a47fc;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    color: #ffffff;
+}
+i
+{
 
+    align-items: flex-end;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    margin-top:10px; 
+    border: 2px solid #181818;
+    padding: 10px;
+    border-radius: 20px;
+}
 /* Navigation */
 
 nav ul
@@ -50,6 +68,8 @@ nav a:hover
     border-top: 2px solid #3a47fc;
 
 }
+
+/* corps */
 #Hébergements 
 {
     display: flex;
@@ -103,6 +123,7 @@ section h1, article h1
 {
 
 }
+
 article
 {
     width: 100%;
