@@ -31,10 +31,9 @@ input {
 padding:7px;
 }
 
-.form__group i {
+nav i {
 background-color: #e3e2e1;
-padding:7px;
-border:none;
+padding:8.5px;
 border-top-left-radius: 10px;
 border-bottom-left-radius: 10px;
 }
@@ -59,7 +58,7 @@ border-radius: 20px;
 padding-right:10px;
 }
 
-nav i {
+#filtres nav i {
 align-items: flex-end;
 color :blue;
 border: none;
@@ -76,6 +75,7 @@ display: flex;
 }
 
 nav li {
+list-style-type: none;
 margin-right: 55px;
 }
 
