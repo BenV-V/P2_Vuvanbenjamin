@@ -95,7 +95,7 @@ border-top: 2px solid #3a47fc;
 }
 
 /* corps */
-#hebergements, #activites, #popular {
+#Hébergements, #activites, #popular {
 display: flex;
 flex-wrap: wrap;
 justify-content: space-around;
@@ -190,6 +190,6 @@ footer h1 {
 font-size: 1.2em;
 }
 
-#apropos, #noshebergements, #assistance{
+#Apropos, #NosHébergements, #Assistance{
 width: 34%;
 }
