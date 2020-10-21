@@ -29,7 +29,6 @@ header .wrapper{
 	display:flex;
 	justify-content: space-between;
 	align-items: center;
-
 }
 /* Navigation */
 header nav {
@@ -117,8 +116,7 @@ nav i {
 .section h1, .aside h1{
 	padding: 20px 10px 10px 25px;
 }
-a:link 
-{ 
+a:link{ 
 	text-decoration:none; 
 } 
 .element, .elementpop{
@@ -162,7 +160,6 @@ a:link
 	border-top-right-radius: 20px;
 	border-top-left-radius :20px;
 }
-
 /*aside*/
 .aside h1 i {
 	float:right;
@@ -182,7 +179,6 @@ a:link
 	object-fit: cover;
 	object-position: center center;
 }
-
 /*article*/
 #hobbies{
 	height: auto;
@@ -234,7 +230,7 @@ footer a {
 footer h1 {
 	font-size: 1.2em;
 }
-#link{
+#link_propose, #link_lodging, #link_assist{
 	width: 34%;
 	margin-left: 20px;
 }
