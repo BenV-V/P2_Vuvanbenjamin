@@ -4,7 +4,7 @@
 		<meta charset="utf-8" />
 			<link rel="stylesheet" href="style.css" />
 			<link rel="stylesheet" href="font-awesome-4.7.0/css/all.css" >
-			<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;1,200&display=swap">
+			<link href="https://fonts.googleapis.com/css2?family=Raleway:ital@0;1&display=swap" rel="stylesheet">
 			<link rel="stylesheet" href="font-awesome-4.7.0/css/fontawesome.min.css">
 		<title>Réservia</title>
 	</head>
@@ -20,24 +20,23 @@
 					<nav>
 						<a href="#lodging">Hébergements</a>
 						<a href="#hobbies">Activités</a>
-						<a href="#">S'inscrire</a>
-					</nav>
+						<a href="#"><span>S'inscrire</span></a>
+					</nav>					
 				</div>
 			</header>
 
 			<div class="wrapper">
 				<h2>Trouvez votre hébergement pour des vacances de rêve</h2>
 				<p> En plein centre ville ou en pleine nature</p>
-				<nav>
-					<i class="fa fa-map-marker-alt"></i><input id="search"><label for="search">Rechercher</label>
-				</nav>
+				<div id="search"><i class="fa fa-map-marker-alt"></i><input id="searchtext" placeholder="Marseille, France"><label for="search">Rechercher</label>
+				</div>
 				<div id="filtres">	
 					<h3>Filtres</h3> 
 					<nav>
-						<button><i class="fa fa-money-bill-wave"></i> Economique</button>
-						<button><i class="fa fa-child"></i> Familial</button>
-						<button><i class="fas fa-heart"></i> Romantique</button>
-						<button><i class="fa fa-dog"></i> Animaux autorisés</button>	
+						<button><i class="fa fa-money-bill-wave"></i>Economique</button>
+						<button><i class="fa fa-child"></i>Familial</button>
+						<button><i class="fas fa-heart"></i>Romantique</button>
+						<button><i class="fa fa-dog"></i>Animaux autorisés</button>	
 					</nav>
 				</div>
 				<div id="info">
@@ -99,7 +98,7 @@
 							</div>
 						</div></a>
 					</div>
-					<h1>Afficher plus</h1>
+					<a href="#"><h1>Afficher plus</h1></a>
 				</div>
 
 				<div class="aside">
@@ -131,51 +130,59 @@
 				</div>
 			</div>
 
-			<article>
-				<div id="hobbies">
-					<h1>Activités à Marseille</h1>
-					<div class="container">
-						<a href="#"><div class="activities">
-						<img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux port">
-						<h3>Vieux port</h3> 
-						</div></a>
-						<a href="#"><div class="activities">
-						<img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
-						<h3>Fort de Pomègues</h3> 
-						</div></a>
-						<a href="#"><div class="activities">
-						<img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles de Frioul">
-						<h3>Îles de Frioul</h3> 
-						</div></a>
-						<a href="#"><div class="activities">
-						<img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques">
-						<h3>Parc National des Calanques</h3> 
-						</div></a>
-						<a href="#"><div class="activities">
-						<img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
-						<h3>Notre-Dame-de-la-Garde</h3> 
-						</div></a>
-						<a href="#"><div class="activities">
-						<img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
-						<h3>Parc Longchamp</h3> 
-						</div></a>
-					</div>
-				</div>
-			</article>
+   <article class="activities">
+      <h1>Activités à Marseille</h1>
+      <a href="#" class="activity activity1">
+        <div class="activityimg">
+          <img class="img" src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux port">
+        </div>
+        <h3 class="activitiestitle">Vieux Port</h3>
+      </a>
+      <a href="#" class="activity activity2">
+        <div class="activityimg">
+          <img class="img" src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Pomègues">
+      	</div>
+        <h3 class="activitiestitle">Fort de Pomègues</h3>
+      </a>
+      <a href="#" class="activity activity3">
+        <div class="activityimg">
+          <img class="img" src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Calanques">
+        </div>
+        <h3 class="activitiestitle">Parc National des Calanques</h3>
+      </a>
+      <a href="#" class="activity activity4">
+        <div class="activityimg">
+          <img class="img" src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
+        </div>
+        <h3 class="activitiestitle">Notre-Dame-de-la-Garde</h3>
+      </a>
+      <a href="#" class="activity activity5">
+        <div class="activityimg">
+          <img class="img" src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Frioul">
+        </div>
+        <h3 class="activitiestitle">Île du Frioul</h3>
+      </a>
+      <a href="#" class="activity activity6">
+        <div class="activityimg">
+          <img class="img" src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Longchamp">
+        </div>
+        <h3 class="activitiestitle">Parc Longchamp</h3>
+      </a>
+    </article>
 			<footer>
 				<div class="wrapper">
-					<div id="link_propose">
+					<div class="link">
 						<h1>A propos</h1>
 							<a href="#">Fonctionnement du site</a>
 							<a href="#">Conditions générales de vente</a>
 							<a href="#">Données et confidentialité</a>
 					</div>
-					<div id="link_lodging">
+					<div class="link">
 						<h1>Nos Hébergements</h1>
 							<a href="#">Charte qualité</a>
 							<a href="#">Soumettre votre hôtel</a>
 					</div>
-					<div id="link_assist">
+					<div class="link">
 						<h1>Assistance</h1>
 							<a href="#">Centre d'aide</a>
 							<a href="#">Nous contacter</a>
