@@ -1,0 +1,102 @@
+/* Mobile */
+@media screen and (max-width: 850px) {
+	header nav{
+		position: absolute;
+		width: 100%;
+		margin: 120px 0px 20px 0;
+		border-bottom:1px solid #F2F2F2;
+		text-align: center;
+		display:flex;
+	}
+	span{
+		padding-right: 20px;
+	}
+	header nav a:nth-child(1){width: 50%}
+	header nav a:nth-child(2){width: 50%}
+	header nav a{
+		padding: 0 30px 0 40px;
+	}
+	header nav a:hover{	
+		color: #0065FC;
+		padding-bottom:4px;
+		border-bottom:2px solid #0065FC;
+	}
+	#search, #searchtext{
+		display: flex;
+		width: 100%;
+	}
+	h1{
+		margin: 50px 20px 0 0;
+	}
+	#search i{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	#search button span{
+		display:none;
+	}
+	#info{
+		margin:0 10px 0 10px;
+	}
+	.section{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+	}
+	#info{
+		margin-left:20px;
+		margin-bottom: 20px;
+	}
+	.box{
+		display:flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.box .section{
+		order:2;
+	}
+	.box .aside{
+		order:1;
+	}
+	.aside{
+		background-color: #F2F2F2;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+	}
+	.element, .elementpop{		
+		justify-content: space-between;
+		box-shadow: 0 10px 20px #F2F2F2;
+		background-color: white;
+		padding: 3px;
+		border-radius: 20px;
+		color:black;
+		border: none;
+		margin:20px 10px 20px 10px;
+	}
+	.section img, .aside img{
+		border-top-left-radius: 20px;
+		border-top-right-radius: 20px;
+		width: 100%;
+		height: 150px;
+		object-fit: cover;
+		object-position: center center;
+	}
+	#hobbies{
+		padding-left: 20px;
+	}
+	.activities {
+		grid-template-columns: 1fr;
+		grid-gap: 25px;
+		margin:0 10px 0 10px;
+		grid-template-rows: 200px 200px 200px 200px 200px 200px;
+	}
+  	footer .wrapper {
+		flex-direction: column;
+		padding: 20px;
+	}
+  	footer .link{
+		padding: 0;
+		margin: 20px 0;
+  	}
+}
