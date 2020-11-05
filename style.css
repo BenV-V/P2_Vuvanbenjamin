@@ -197,12 +197,12 @@ input {
 	margin:20px 0px 20px 0px;
 }
 #filtres nav button span{
-	font-weight: bold;
 	color:black;
 }
 #filtres nav i {
 	color :#0065FC;
 	margin-right: 10px;
+	margin-left: -2px;
 	border-radius: 100%;
 	background-color: #DEEBFF;
 	padding: 13px;
@@ -213,7 +213,7 @@ input {
 	font-size: 1.2em;
 	border-radius: 20px;
 	padding-right: 15px;
-	margin: 5px 10px 5px 20px;
+	margin: 5px 0px 5px 20px;
 	border: 1px solid #ccc;
 }
 #filtres nav button:hover{
@@ -315,6 +315,7 @@ footer {
 	padding-top: 25px;
 	margin-top: 40px;
 	width: 100%;
+	padding-bottom: 20px;
 }
 .wrapper h3{
 	font-weight: bold;
