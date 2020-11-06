@@ -72,7 +72,6 @@
 		grid-template-rows: auto;
 		width: 100%;
 	}
-
 	.element, .elementpop{		
 		justify-content: space-between;
 		box-shadow: 0 10px 20px #F2F2F2;
@@ -82,7 +81,6 @@
 		color:black;
 		border: none;
 		margin:20px 10px 20px 10px;
-		
 	}
 	.section img{
 		border-top-right-radius: 20px;
@@ -103,11 +101,11 @@
 		margin:0 10px 0 10px;
 		grid-template-rows: 200px 200px 200px 200px 200px 200px;
 	}
-  	footer .wrapper {
+	footer .wrapper {
 		flex-direction: column;
 		padding: 20px;
 	}
-  	footer .link{
+ 	footer .link{
 		padding: 0;
 		margin: 20px 0;
   	}
