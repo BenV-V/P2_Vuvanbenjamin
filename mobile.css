@@ -1,9 +1,11 @@
 /* Mobile */
 @media screen and (max-width: 850px) {
-	header nav{
+	.wrapper{
+		padding-top: 10px;
+		}header nav{
 		position: absolute;
 		width: 100%;
-		margin: 120px 0px 20px 0;
+		margin: 140px 0px 20px 0;
 		border-bottom:1px solid #F2F2F2;
 		text-align: center;
 		display:flex;
@@ -14,11 +16,16 @@
 	header nav a:nth-child(1){width: 50%}
 	header nav a:nth-child(2){width: 50%}
 	header nav a{
-		padding: 0 30px 0 40px;
+		padding: 20px 30px 10px 40px;
+	}
+	header nav a[data-active=true]{
+		color: #0065FC;
+		padding-bottom:10px;
+		border-bottom:2px solid #0065FC;
 	}
 	header nav a:hover{	
 		color: #0065FC;
-		padding-bottom:4px;
+		padding-bottom:10px;
 		border-bottom:2px solid #0065FC;
 	}
 	#search{
@@ -28,7 +35,7 @@
 		justify-content: center;
 	}
 	h1{
-		margin: 50px 20px 0 0;
+		margin: 80px 20px 10px 0;
 	}
 	#search i{
 		padding-left: 20px;
@@ -42,9 +49,6 @@
 		border-bottom-left-radius: 10px;
 		margin-left: -10px;
 	}
-	#info{
-		margin:0 10px 0 10px;
-	}
 	.section{
 		display: grid;
 		grid-template-columns: 1fr;
@@ -52,7 +56,7 @@
 	}
 	#info{
 		margin-left:20px;
-		margin-bottom: 20px;
+		padding-bottom: 20px;
 	}
 	.box{
 		display:flex;
@@ -76,6 +80,7 @@
 		justify-content: space-between;
 		box-shadow: 0 10px 20px #F2F2F2;
 		background-color: white;
+		line-height: 1.4em;
 		padding: 3px;
 		border-radius: 20px;
 		color:black;

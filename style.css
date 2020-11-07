@@ -1,5 +1,8 @@
 /*Not for mobile*/
 @media screen and (min-width: 850px) {
+	h1{
+		margin-bottom: 10px;
+	}
 	#search button i{
 		display:none;
 	}
@@ -11,11 +14,14 @@
 		padding-right: 10px;
 		padding: 15px;
 	}
-	header nav a:hover{
-		border-color: #0065FC;	
+	header nav a[data-active=true]{
 		color: #0065FC;
-		border-top: 3px #0065FC solid;
+		border-top: 3px solid #0065FC;
 	}
+	header nav a:hover {
+   		color: #0065FC;
+   		border-top: 3px solid #0065FC;
+  }		
 	header a{
 		padding: 30px 0;
 		margin: 0 30px 0 40px;
@@ -74,6 +80,7 @@
 	}
 	.element, .elementpop{
 		background-color: white;
+		line-height: 1.4em;
 		padding: 3px;
 		border-radius: 20px;
 		color:black;
@@ -95,6 +102,7 @@
 	.activity:nth-child(6) {grid-row: 5/11;}
 }
 /* Global */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
 *{
 	margin:0;
 	padding:0;
@@ -107,21 +115,22 @@ h2{
 	margin-top:10px;
 	font-weight: bold;
 	font-size: 1.3em;
+	margin-bottom: 10px;
 }
 body {
 	max-width: 100%;
 	width:100%;
 	margin:auto;
 	font-family: 'Raleway',sans-serif;
-	font-size: 15.2px;
+	font-size: 15px;
 	margin-right: 20px;
 	line-height: 20px;
 }
 .wrapper{
 	width: 100%;
-	max-width:1400px;
+	max-width:100%;
 	margin:0 auto;
-	line-height: 2;
+	line-height: 1.2;
 }
 /* Header */
 header{
@@ -137,7 +146,11 @@ header .wrapper{
 	align-items: center;
 }
 .wrapper h1, .wrapper p{
-		margin-left:30px;
+	margin-left:30px;
+}
+.wrapper p{
+	margin-left:30px;
+	margin-bottom: 30px;
 }
 /* Navigation */
 header a{
@@ -146,7 +159,7 @@ header a{
 	text-decoration: none;
 	font-weight: bold;
 }
-span{
+header span{
 	color:#0065FC;
 	font-weight: bold;
 }
@@ -167,6 +180,11 @@ input {
 	padding:15px;
 	width:250px;
 }
+::placeholder {
+  font-weight: bold;
+  font-size: 1.3em;
+  color:black;
+}
 #searchtext{
 	background-color: white;
 	color:black;
@@ -179,13 +197,27 @@ input {
 	border-top-left-radius: 10px;
 	border-bottom-left-radius: 10px;
 }
+#info{
+	margin:0 10px 0 10px;
+	display:flex;
+	  align-items: center;
+}
+#info span{
+	flex-grow: 1;
+}
 #info i {
 	border: 0.01px solid #babdc2;
 	color:#0065FC;
 	margin-right: 10px;
-	padding: 3px 8px 3px 8px;
 	background-color: none;
-	border-radius: 20px;
+	height: 2rem;
+	width: 2rem;
+	min-height: 2rem;
+	min-width: 2rem;
+	border-radius: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 /*Filtres*/
 #filtres h3{
@@ -193,7 +225,7 @@ input {
 }
 #filtres{
 	align-items: baseline;
-	margin:20px 0px 20px 0px;
+	margin: 20px 0px 20px 0px;
 }
 #filtres nav button span{
 	color:black;
@@ -201,16 +233,25 @@ input {
 #filtres nav i {
 	color :#0065FC;
 	margin-right: 10px;
-	margin-left: -2px;
 	border-radius: 100%;
+	margin-left: -1px;
+	height: 45px;
+	width: 45px;
+	min-height: 45px;
+	min-width: 45px;
 	background-color: #DEEBFF;
 	padding: 13px;
+}
+.iconcircle{
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 #filtres nav button{
 	background-color: white;
 	font-weight: bold;
 	font-size: 1.2em;
-	border-radius: 20px;
+	border-radius: 25px;
 	padding-right: 15px;
 	margin: 5px 0px 5px 20px;
 	border: 1px solid #ccc;
@@ -222,6 +263,7 @@ input {
 /* section - aside */
 .aside h2 i{
 	float:right;
+	padding-right: 10px;
 }
 p span{
 	font-weight: bold;
@@ -238,14 +280,14 @@ p span{
 	padding:25px;
 }
 .section h2, .aside h2{
-	padding: 20px 10px 10px 25px;
+	padding: 20px 10px 10px 20px;
 	font-weight: bold;
 	font-size:1.5em;
 }
 a:link{ 
 	text-decoration:none;
 } 
-.section h3, .section p, .raking{
+.section h3, .section p, .section .ranking{
 	padding-left: 8px;
 }
 .element:hover, .elementpop:hover{
@@ -254,6 +296,15 @@ a:link{
 .elementpop{
 	width: 350px;
 	height:120px;
+}
+.content{
+	justify-content: space-around;
+	display: flex;
+	flex-direction: column;
+}
+.elementpop .ranking{
+	flex: 1;
+	padding-top: 30px;
 }
 .elementpop img{
 	float: left;
@@ -264,9 +315,6 @@ a:link{
 	margin-right:1em;
 	object-fit: cover;
 	object-position: center center;
-}
-.elementpop .raking{
-	padding-top: 30px;
 }
 /*article*/
 h2{
@@ -319,6 +367,7 @@ footer {
 .wrapper h3{
 	font-weight: bold;
 	font-size:1.2em;
+	margin-bottom: 20px;
 }
 footer .wrapper{
 	display: flex;
