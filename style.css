@@ -102,7 +102,7 @@
 	.activity:nth-child(6) {grid-row: 5/11;}
 }
 /* Global */
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400&display=swap');
 *{
 	margin:0;
 	padding:0;
@@ -154,10 +154,9 @@ header .wrapper{
 }
 /* Navigation */
 header a{
-	font-size: 1.1em;
+	font-size: 1.2em;
 	color: #181818;
 	text-decoration: none;
-	font-weight: bold;
 }
 header span{
 	color:#0065FC;
@@ -297,18 +296,19 @@ a:link{
 	width: 350px;
 	height:120px;
 }
-.content{
+.elementpop .content{
+	padding: 7px 20px 0 0;
 	justify-content: space-around;
 	display: flex;
 	flex-direction: column;
 }
 .elementpop .ranking{
 	flex: 1;
-	padding-top: 30px;
+	padding-top: 20px;
 }
 .elementpop img{
 	float: left;
-	width: 40%;
+	width: 35%;
 	height: 115px;
 	border-top-left-radius: 15px;	
 	border-bottom-left-radius: 15px;
@@ -349,9 +349,9 @@ h2{
 	object-position: center center;
 }
 .activities h3{
-	font-size:1.1em;
+	font-size:1.2em;
 	font-weight: bold;
-	padding: 10px;
+	padding: 8px;
 }
 .activitiestitle {
 	margin: 10px 10px;
