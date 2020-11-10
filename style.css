@@ -335,7 +335,7 @@ h2{
 	color:black;
 }
 .activity:hover {
-	transform: scale(1.01);
+	transform: scale(1.05);
 }
 .activityimg {
 	position: relative;

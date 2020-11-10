@@ -2,7 +2,8 @@
 @media screen and (max-width: 850px) {
 	.wrapper{
 		padding-top: 10px;
-		}header nav{
+		}
+	header nav{
 		position: absolute;
 		width: 100%;
 		margin: 140px 0px 20px 0;
