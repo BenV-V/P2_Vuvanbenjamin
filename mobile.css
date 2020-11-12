@@ -50,7 +50,7 @@
 		border-bottom-left-radius: 10px;
 		margin-left: -10px;
 	}
-	.section{
+	section{
 		display: grid;
 		grid-template-columns: 1fr;
 		grid-template-rows: auto;
@@ -64,13 +64,13 @@
 		flex-wrap: wrap;
 		justify-content: space-between;
 	}
-	.box .section{
+	.box section{
 		order:2;
 	}
-	.box .aside{
+	.box aside{
 		order:1;
 	}
-	.aside{
+	aside{
 		background-color: #F2F2F2;
 		display: grid;
 		grid-template-columns: 1fr;
@@ -88,10 +88,10 @@
 		border: none;
 		margin:20px 10px 20px 10px;
 	}
-	.section img{
+	section img{
 		border-top-right-radius: 20px;
 	}
-	.section img, .aside img{
+	section img, aside img{
 		border-top-left-radius: 20px;
 		width: 100%;
 		height: 150px;
